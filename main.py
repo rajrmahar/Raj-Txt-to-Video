@@ -205,7 +205,7 @@ async def upload(bot: Client, m: Message):
             except Exception as e:
                 await m.reply_text(
                     f"**downloading Interupted **\n{str(e)}\n**Name** » {name}\n**Link** » `{url}`\n\n **🤖𝐁𝐎𝐓 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐓𝐔𝐒𝐇𝐀𝐑**") 
-                )
+               
                 continue
 
     except Exception as e:
