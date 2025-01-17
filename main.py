@@ -35,7 +35,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>𝗛𝗲𝗹𝗹𝗼 {m.from_user.mention} 👋\n\n➨ 𝗜 𝗮𝗺 𝗧𝘅𝘁 𝘁𝗼 𝗩𝗶𝗱𝗲𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 𝗕𝗼𝘁🤖.\n\n➨ 𝗕𝗼𝘁 𝗠𝗮𝗱𝗲 𝗕𝘆 𝗧𝘂𝘀𝗵𝗮𝗿.\n\n➨ 𝗙𝗼𝗿 𝗨𝘀𝗲 𝗠𝗲 𝗦𝗲𝗻𝗱 /tushar 𝗖𝗼𝗺𝗺𝗮𝗻𝗱.\n\n➨ 𝗔𝗻𝗱 𝗙𝗼𝗹𝗹𝗼𝘄 𝗙𝗲𝘄 𝗦𝘁𝗲𝗽𝘀.\n\n➨ 𝗨𝘀𝗲 /stop 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗿 𝗦𝘁𝗼𝗽𝗽𝗶𝗻𝗴 𝗢𝗻𝗴𝗼𝗶𝗻𝗴 𝗣𝗿𝗼𝗰𝗰𝗲𝘀.</b>")
+    await m.reply_text(f"<b>Hello {m.from_user.mention} 👋\n\n➨ I am Txt to Video Uploader Bot.\n\n➨ Bot Made By Tushar.\n\n➨ For Use Me Send /𝘁𝘂𝘀𝗵𝗮𝗿 Command.\n\n➨ And Follow Few Steps.\n\n➨ Use /𝘀𝘁𝗼𝗽 Command For Stopping Ongoing Procces.</b>")
 
 
 @bot.on_message(filters.command("stop"))
