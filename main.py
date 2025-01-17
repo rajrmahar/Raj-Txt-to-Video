@@ -35,7 +35,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>𝗛𝗲𝗹𝗹𝗼 {m.from_user.mention} 👋\n\n I Am A Bot For Download Links From Your **TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me /tushar Command And Then Follow Few Steps..\n\nUse /stop to stop any ongoing task.</b>")
+    await m.reply_text(f"<b>𝗛𝗲𝗹𝗹𝗼 {m.from_user.mention} 👋\n\n➨ 𝗜 𝗮𝗺 𝗧𝘅𝘁 𝘁𝗼 𝗩𝗶𝗱𝗲𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 𝗕𝗼𝘁🤖.\n\n➨ 𝗕𝗼𝘁 𝗠𝗮𝗱𝗲 𝗕𝘆 𝗧𝘂𝘀𝗵𝗮𝗿.\n\n➨𝗙𝗼𝗿 𝗨𝘀𝗲 𝗠𝗲 𝗦𝗲𝗻𝗱 /𝘁𝘂𝘀𝗵𝗮𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱.\n\n➨ 𝗔𝗻𝗱 𝗙𝗼𝗹𝗹𝗼𝘄 𝗙𝗲𝘄 𝗦𝘁𝗲𝗽𝘀.\n\n➨ 𝗨𝘀𝗲 /𝘀𝘁𝗼𝗽 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗿 𝗦𝘁𝗼𝗽𝗽𝗶𝗻𝗴 𝗢𝗻𝗴𝗼𝗶𝗻𝗴 𝗣𝗿𝗼𝗰𝗰𝗲𝘀.</b>")
 
 
 @bot.on_message(filters.command("stop"))
@@ -64,7 +64,7 @@ async def upload(bot: Client, m: Message):
        os.remove(x)
             # print(len(links)
     except:
-           await m.reply_text("**𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗳𝗶𝗹𝗲 𝗶𝗻𝗽𝘂𝘁.**")
+           await m.reply_text("**🙂𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗳𝗶𝗹𝗲 𝗶𝗻𝗽𝘂𝘁🙂.**")
            os.remove(x)
            return
     
@@ -166,8 +166,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] 𝗩𝗶𝗱_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.mkv**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**' 
-                cc1 = f'**[📁] 𝗣𝗱𝗳_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.pdf**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**'
+                cc = f'**[📽️] 𝗩𝗶𝗱_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭} Tushar.mkv**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**' 
+                cc1 = f'**[📁] 𝗣𝗱𝗳_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭} Tushar.pdf**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -193,7 +193,7 @@ async def upload(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⬇️𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆⬇️... »**\n\n**📝Name »**`{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
+                    Show = f"**⬇️𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆⬇️... »**\n\n**📝Name »**`{name}\n\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
