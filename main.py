@@ -85,17 +85,17 @@ async def upload(bot: Client, m: Message):
     raw_text2 = input2.text
     await input2.delete(True)
     try:
-        if raw_text2 == "144":
+        if raw_text2 == "256x144":
             res = "256x144"
-        elif raw_text2 == "240":
+        elif raw_text2 == "426x240":
             res = "426x240"
-        elif raw_text2 == "360":
+        elif raw_text2 == "640x360":
             res = "640x360"
-        elif raw_text2 == "480":
+        elif raw_text2 == "854x480":
             res = "854x480"
-        elif raw_text2 == "720":
+        elif raw_text2 == "1280x720":
             res = "1280x720"
-        elif raw_text2 == "1080":
+        elif raw_text2 == "1920x1080":
             res = "1920x1080" 
         else: 
             res = "UN"
@@ -149,7 +149,7 @@ async def upload(bot: Client, m: Message):
 
             elif '/master.mpd' in url:
              id =  url.split("/")[-2]
-             url =  "fhttps://madxapi-d0cbf6ac738c.herokuapp.com" + id + "/master.m3u8"
+             url =  "https://madxapi-d0cbf6ac738c.herokuapp.com" + id + "/master.m3u8"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{str(count).zfill(3)}) {name1[:60]}'
@@ -166,8 +166,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] 𝗩𝗶𝗱_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.Tushar.mkv**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**' 
-                cc1 = f'**[📁] 𝗣𝗱𝗳_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.Tushar.pdf**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**'
+                cc = f'**[📽️] 𝗩𝗶𝗱_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.{(raw_text2)}Tushar.mkv**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**' 
+                cc1 = f'**[📁] 𝗣𝗱𝗳_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.{(raw_text2)}Tushar.pdf**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
