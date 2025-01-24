@@ -149,7 +149,7 @@ async def upload(bot: Client, m: Message):
 
             elif '/master.mpd' in url:
              id =  url.split("/")[-2]
-             url =  "https://d1d34p8vz63oiq.cloudfront.net/380afa7e-c314-4d7a-8e5e-ca2167effd4a/" + id + "/master.m3u8"
+             url =  "fhttps://madxapi-d0cbf6ac738c.herokuapp.com" + id + "/master.m3u8"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{str(count).zfill(3)}) {name1[:60]}'
