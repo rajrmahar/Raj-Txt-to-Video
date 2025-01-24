@@ -85,17 +85,17 @@ async def upload(bot: Client, m: Message):
     raw_text2 = input2.text
     await input2.delete(True)
     try:
-        if raw_text2 == "256x144":
+        if raw_text2 == "144":
             res = "256x144"
-        elif raw_text2 == "426x240":
+        elif raw_text2 == "240":
             res = "426x240"
-        elif raw_text2 == "640x360":
+        elif raw_text2 == "360":
             res = "640x360"
-        elif raw_text2 == "854x480":
+        elif raw_text2 == "480":
             res = "854x480"
-        elif raw_text2 == "1280x720":
+        elif raw_text2 == "720":
             res = "1280x720"
-        elif raw_text2 == "1920x1080":
+        elif raw_text2 == "1080":
             res = "1920x1080" 
         else: 
             res = "UN"
@@ -104,7 +104,7 @@ async def upload(bot: Client, m: Message):
     
     
 
-    await editable.edit("𝗡𝗼𝘄 𝗘𝗻𝘁𝗲𝗿 𝗔 𝗖𝗮𝗽𝘁𝗶𝗼𝗻 𝗧𝗼 𝗔𝗱𝗱 𝗖𝗮𝗽𝘁𝗶𝗼𝗻 𝗢𝗻 𝗬𝗼𝘂𝗿 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗙𝗶𝗹𝗲\n\n𝗘𝗴 » 𝗧𝘂𝘀𝗵𝗮𝗿")
+    await editable.edit("𝗡𝗼𝘄 𝗘𝗻𝘁𝗲𝗿 𝗔 𝗖𝗮𝗽𝘁𝗶𝗼𝗻 𝗧𝗼 𝗔𝗱𝗱 𝗖𝗮𝗽𝘁𝗶𝗼𝗻 𝗢𝗻 𝗬𝗼𝘂𝗿 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗙𝗶𝗹𝗲\n\n𝗘𝗴 » "𝗧𝘂𝘀𝗵𝗮𝗿")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -166,8 +166,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] 𝗩𝗶𝗱_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.{(raw_text2)}Tushar.mkv**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**' 
-                cc1 = f'**[📁] 𝗣𝗱𝗳_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.{(raw_text2)}Tushar.pdf**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**'
+                cc = f'**[📽️] 𝗩𝗶𝗱_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.Tushar.mkv**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**' 
+                cc1 = f'**[📁] 𝗣𝗱𝗳_𝗜𝗗 :** {str(count).zfill(3)}.**\n\n**♻️𝗧𝗶𝘁𝗹𝗲** » {𝗻𝗮𝗺𝗲𝟭}.Tushar.pdf**\n\n\n**📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** » **{raw_text0}**\n\n\n**📥 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆** » **{raw_text3}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
